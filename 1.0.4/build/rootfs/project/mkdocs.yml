@@ -1,6 +1,0 @@
-site_name: 'Gearbox Docs'
-docs_dir: 'mkdocs'
-site_dir: 'docs'
-dev_addr: '0.0.0.0:8001'
-theme:
-    name: 'material'

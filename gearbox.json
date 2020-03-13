@@ -1,0 +1,25 @@
+{
+	"state": "production",
+	"organization": "gearboxworks",
+	"name": "mkdocs",
+	"network": "--network gearboxnet",
+	"ports": [
+		"80"
+	],
+	"volumes": "",
+	"restart": "--restart no",
+	"run": "/usr/bin/mkdocs",
+	"args": "serve -a 0.0.0.0:80",
+	"env": {
+		"MKDOCS_USER": "gearbox"
+	},
+	"versions": {
+		"1.0.4": {
+			"majorversion": "1.0",
+			"latest": true,
+			"ref": "",
+			"base": "gearboxworks/gearbox-base:alpine-3.10"
+		}
+	}
+}
+
