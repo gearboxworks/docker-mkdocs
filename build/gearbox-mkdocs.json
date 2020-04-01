@@ -1,17 +1,34 @@
 {
-	"state": "production",
-	"organization": "gearboxworks",
-	"name": "mkdocs",
-	"network": "--network gearboxnet",
-	"ports": [
-		"8000"
-	],
-	"volumes": "",
-	"restart": "--restart no",
-	"run": "",
-	"args": "",
-	"env": {
-		"MKDOCS_USER": "gearbox"
+	"schema": "gear-1",
+	"meta": {
+		"state": "production",
+		"organization": "gearboxworks",
+		"name": "mkdocs",
+		"label": "Mkdocs",
+		"maintainer": "Gearbox Team <team@gearbox.works>",
+		"class": "unknown",
+		"refurl": "unknown"
+	},
+	"build": {
+		"ports": {
+
+			"http": "80"
+		},
+		"run": "/usr/bin/mkdocs",
+		"args": "serve -a 0.0.0.0:80",
+		"env": {
+
+			"MKDOCS_USER": "gearbox"
+		},
+		"network": "--network gearboxnet",
+		"volumes": "",
+		"restart": "--restart no"
+	},
+	"run": {
+	},
+	"project": {
+	},
+	"extensions": {
 	},
 	"versions": {
 		"1.0.4": {
@@ -19,7 +36,7 @@
 			"latest": true,
 			"ref": "",
 			"base": "gearboxworks/gearbox-base:alpine-3.10"
-		}
+		},
+		"": {}
 	}
 }
-

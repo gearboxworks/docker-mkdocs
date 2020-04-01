@@ -1,8 +1,8 @@
-![Gearbox](https://github.com/gearboxworks/gearbox.github.io/raw/master/Gearbox-100x.png)
+![Gearbox](https://raw.githubusercontent.com/gearboxworks/gearboxworks.github.io/master/assets/images/gearbox-logo.png)
 
 
-# Another [Gearbox](https://github.com/gearboxworks/) Docker container service - mkdocs
-This is the repository for the [mkdocs](<no value>) Docker container implemented for [Gearbox](https://github.com/gearboxworks/).
+# mkdocs Docker container service for [Gearbox](https://github.com/gearboxworks/)
+This is the repository for the [mkdocs](unknown) Docker container implemented for [Gearbox](https://github.com/gearboxworks/).
 
 
 ## Repository Info
@@ -12,10 +12,9 @@ GitHub release(latest): ![last-release-date](https://img.shields.io/github/relea
 
 
 ## Supported versions and respective Dockerfiles
-| Service | GitHub Version | Docker Version | Docker Size | Docker Tags | Dockerfile |
-| ------- | -------------- | -------------- | ----------- | ----------- | ---------- |
-| mkdocs | ![mkdocs](https://img.shields.io/badge/mkdocs-1.0.4-green.svg) | ![Docker Version)](https://img.shields.io/docker/v/gearboxworks/mkdocs/1.0.4) | ![Docker Size](https://img.shields.io/docker/image-size/gearboxworks/mkdocs/1.0.4) | `1.0.4`, `1.0`, `latest` | _([1.0.4/DockerfileRuntime](https://github.com/gearboxworks/docker-mkdocs/blob/master/1.0/DockerfileRuntime))_ |
-
+| Service | GitHub Version | Docker Version | Docker Size | Docker Tags |
+| ------- | -------------- | -------------- | ----------- | ----------- |
+| [mkdocs](unknown) | ![mkdocs](https://img.shields.io/badge/mkdocs-1.0.4-green.svg) | ![Docker Version)](https://img.shields.io/docker/v/gearboxworks/mkdocs/1.0.4) | ![Docker Size](https://img.shields.io/docker/image-size/gearboxworks/mkdocs/1.0.4) | _([`1.0.4`, `1.0`, `latest`](https://github.com/gearboxworks/docker-mkdocs/blob/master/1.0/DockerfileRuntime))_ |
 
 
 ## Using this container.
@@ -42,7 +41,7 @@ Simply clone this repository to your local machine
 `make push` - Push already built Docker images to Docker Hub, (only for Gearbox admins). Push all versions from the base directory or specific versions from each directory.
 
 ### Runtime from GitHub repo
-When you `cd` into a version directory you can also perform a few more actions.
+You can either build your container as above, or use it from DockerHub with these commands:
 
 `make start` - Spin up a Docker container with the correct runtime configs.
 
