@@ -6,8 +6,8 @@
 		"name": "mkdocs",
 		"label": "Mkdocs",
 		"maintainer": "Gearbox Team <team@gearbox.works>",
-		"class": "unknown",
-		"refurl": "unknown"
+		"class": "webserver",
+		"refurl": "https://www.mkdocs.org/"
 	},
 	"build": {
 		"ports": {
