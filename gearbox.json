@@ -11,13 +11,11 @@
 	},
 	"build": {
 		"ports": {
-
 			"http": "80"
 		},
 		"run": "/usr/bin/mkdocs",
 		"args": "serve -a 0.0.0.0:80",
 		"env": {
-
 			"MKDOCS_USER": "gearbox"
 		},
 		"network": "--network gearboxnet",
@@ -25,6 +23,10 @@
 		"restart": "--restart no"
 	},
 	"run": {
+		"commands": {
+			"default": "/usr/bin/mkdocs",
+			"mkdocs": "/usr/bin/mkdocs"
+		}
 	},
 	"project": {
 	},
@@ -36,7 +38,6 @@
 			"latest": true,
 			"ref": "",
 			"base": "gearboxworks/gearbox-base:alpine-3.10"
-		},
-		"": {}
+		}
 	}
 }

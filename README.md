@@ -41,6 +41,7 @@ It provides three important functional areas, without any Docker container learn
 
 It also provides a functional SSH daemon for connecting remotely as well as a standard set of common tools and utilities.
 
+Further `launch` documentation can be [found here](https://github.com/gearboxworks/docker-template/blob/master/LAUNCH.md).
 
 ### Download launch
 `launch` is currently in beta testing and is included along with all Gearbox Docker repos.
@@ -89,6 +90,8 @@ Running mkdocs Gearbox container default command. If a container has a default i
 `./launch mkdocs:1.0.4 -flag1 -flag2 variable`
 
 Gearbox containers may have multiple executables that can be run. The mkdocs Gearbox container has the following available commands:
+- The default command will execute `/usr/bin/mkdocs` within the container.
+- `mkdocs` - will execute `/usr/bin/mkdocs` within the container.
 
 
 ### Remote connection
